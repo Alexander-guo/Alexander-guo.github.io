@@ -1,81 +1,81 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Autonomous VIO for Quadrotor
+description: Autonomous Visual Inertial Odometry for CrazyFlie 2.0  
+img: assets/img/VIO_quad/cover.gif
+# redirect: https://unsplash.com
+importance: 1
+category: academic
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This VIO (Visual Inertial Odometry) project involves trajectory planning and accurate tracking, state estimation through stereo vision to realized GPS-denied quadrotor autonomy. Once a quadcopter can accurately estimate its own state and use it for planning and control, the last step towards autonomy is to implement a mapping solution so the quadcopter can sense where the obstacles are using its on-board sensors. [[code]](https://github.com/Alexander-guo/Autonomous-VIO-based-Quadrotor)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/VIO_quad/cover.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Simulation
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+### Approach
+
+__Trajectory Planning__:
+
+In the simulation, the map is assumed known and the start and the goal position is given ahead. In practice, when the whole map is unkown to the robot, the robot is expected to sense its surroundings by using its on-board sensors and plan the trajectories in real-time. In the planning phase, we make the following process:
+
+* Discretizing the map into voxel grids
+* [A* algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the shortest path to the goal position
+* `Waypoints prune` to elemenate shape turns and alleviate quadrotor overshoot
+* Using `Minimum Snap` to interpolate between post-processed waypoints and generate the final smooth trajectory 
+
+The following is an example: 
+
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/VIO_quad/Astar_Waypoints_Trajectory_res0.4.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    A* Path, Pruned Waypoints, Final Trajectory
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+__Trajectory Tracking__:
 
+For quadrotor tracking, a `Nonlinear Geometric Controller` is designed in reference to [Lee et al.](https://ieeexplore.ieee.org/abstract/document/5717652?casa_token=81xcTyqJzRgAAAAA:NN2aL4YhOCkf-2vC_k9z8MBSLyr4HkLEU9Ky4y6BZSuoCmUCZ0YlcTQNnkFIsv_lcD3O8vXU4HY).
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/VIO_quad/model.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The Frame Modeling of CrazyFlie 2.0 
 </div>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+The performance of tracking control:
+<div class="row justify-content-center">
+    <div class="col-sm">
+        {% include figure.html path="assets/img/VIO_quad/mymap_3D_Path_res0.4.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm">
+        {% include figure.html path="assets/img/VIO_quad/Position_vs_Time_res0.4.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div> 
+</div>
+<div class="caption">
+    Trajectory Tracking Control 
+</div>
+
+__State Estimation__:
+
+In this setup, the on-board sensors are [IMU](https://en.wikipedia.org/wiki/Inertial_measurement_unit) and a stereo rig. A `complementary filter` is applied to estimate the attitude of a flying quadrotor based on data from a 6 axis IMU which provides acceleration and angular rate measurements. Given stereo vision, depth can be well extracted. `Feature matching` and `RANSAC` are then applied to estimate the pose of the quadrotor. Besides, an `Error State Kalman Filter (ESKF)` is specially designed for pose estimation. We proceed by incorporating every IMU update as a nonlinear state update to update our nominal model of the pose of the system $$ x_n $$. Since IMU updates are more frequently than vision updates, we use visual measurements to correct the state.
+
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/VIO_quad/pos_vel_window.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    The Estimated, Desired and Practical Position and Velocity with ESKF 
+</div>

@@ -1,4 +1,9 @@
-_site
+!_site
+_site/*
+!_site/assets
+_site/assets/*
+!_site/assets/css
+
 .bundle
 .sass-cache
 .jekyll-cache
