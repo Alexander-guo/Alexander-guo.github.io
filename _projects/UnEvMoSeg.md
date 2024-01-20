@@ -2,21 +2,21 @@
 layout: page
 title: Un-EvMoSeg 
 description: Unsupervised Event-based Independent Motion Segmentation 
-img: assets/img/UnEvMoSeg/figure1_v1.png
+img: assets/img/UnEvMoSeg/figure1_v1_wb.jpg
 importance: 1
 category: academic
 ---
 
 ### Abstract
 
-Event cameras are a novel type of biologically inspired vision sensor known for their high temporal resolution, high dynamic range, and low power consumption. Because of these properties, they are well-suited for processing fast motions that require rapid reactions. Although event cameras have recently shown competitive performance in unsupervised optical flow estimation and in visual odometry when combined with frame-based cameras, performance in detecting independently moving objects (IMOs) is lacking behind, although this is a task where event-based methods would be very useful based on their low latency and HDR properties. Previous approaches to event-based IMO segmentation have been heavily dependent on labeled data.  However, biological vision systems have developed the ability to avoid moving objects through daily tasks without being given explicit labels. In this work, we propose the first event framework that generates IMO pseudo-labels using geometric constraints. Due to its unsupervised nature, our method can handle an arbitrary number of not predetermined objects and is easily scalable to datasets where expensive IMO labels are not readily available. We evaluate our approach on the EVIMO dataset and show that it performs competitively with supervised methods, both quantitatively and qualitatively.
-
+Event cameras are a novel type of biologically inspired vision sensor known for their high temporal resolution, high dynamic range, and low power consumption. Because of these properties, they are well-suited for processing fast motions that require rapid reactions. Although event cameras have recently shown competitive performance in unsupervised optical flow estimation and in visual odometry when combined with frame-based cameras, performance in detecting independently moving objects (IMOs) is lacking behind, although this is a task where event-based methods would be very useful based on their low latency and HDR properties. Previous approaches to event-based IMO segmentation have been heavily dependent on labeled data.  However, biological vision systems have developed the ability to avoid moving objects through daily tasks without being given explicit labels. In this work, we propose the first event framework that generates IMO pseudo-labels using geometric constraints. Due to its unsupervised nature, our method can handle an arbitrary number of not predetermined objects and is easily scalable to datasets where expensive IMO labels are not readily available. We evaluate our approach on the EVIMO dataset and show that it performs competitively with supervised methods, both quantitatively and qualitatively.\
+[[paper](https://arxiv.org/abs/2312.00114)] \| [[page](https://www.cis.upenn.edu/~ziyunw/un_evmoseg/)]
 
 ### Pipeline
 
 <div class="row justify-content-center">
     <div class="col-sm-8">
-        {% include figure.html path="assets/img/UnEvMoSeg/Figure2.png" title="pipeline" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/UnEvMoSeg/Figure2_wb.jpg" title="pipeline" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -39,7 +39,7 @@ train the network.
 
 <div class="row justify-content-center">
     <div class="col-sm-8">
-        {% include figure.html path="assets/img/UnEvMoSeg/qual_v1.png" title="result" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/UnEvMoSeg/qual_v1_wb.jpg" title="result" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

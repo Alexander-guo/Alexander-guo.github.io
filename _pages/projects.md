@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Some of the fun robotics projects I have worked on. 
+description: Covering the topics of Robotics, Computer Vision, Machine Learning...
 nav: true
 nav_order: 1
-display_categories: [academic, fun]
+display_categories: [work, academic]
 horizontal: true
 ---
 
@@ -20,10 +20,10 @@ horizontal: true
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
+    <div class="row row-cols-1">  
+      {%- for project in sorted_projects -%}
+        {% include projects_horizontal.html %}
+      {%- endfor %}
     </div>
   </div>
   {%- else -%}
