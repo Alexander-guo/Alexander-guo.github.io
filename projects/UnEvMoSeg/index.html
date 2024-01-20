@@ -114,13 +114,14 @@
 
           <header class="post-header">
             <h1 class="post-title">Un-EvMoSeg</h1>
-            <p class="post-description">Unsupervised Event-based Independent Motion Segmentation</p>
+            <p class="post-description" style="font-size: 120%">Unsupervised Event-based Independent Motion Segmentation</p>
           </header>
 
           <article>
             <h3 id="abstract">Abstract</h3>
 
-<p>Event cameras are a novel type of biologically inspired vision sensor known for their high temporal resolution, high dynamic range, and low power consumption. Because of these properties, they are well-suited for processing fast motions that require rapid reactions. Although event cameras have recently shown competitive performance in unsupervised optical flow estimation and in visual odometry when combined with frame-based cameras, performance in detecting independently moving objects (IMOs) is lacking behind, although this is a task where event-based methods would be very useful based on their low latency and HDR properties. Previous approaches to event-based IMO segmentation have been heavily dependent on labeled data.  However, biological vision systems have developed the ability to avoid moving objects through daily tasks without being given explicit labels. In this work, we propose the first event framework that generates IMO pseudo-labels using geometric constraints. Due to its unsupervised nature, our method can handle an arbitrary number of not predetermined objects and is easily scalable to datasets where expensive IMO labels are not readily available. We evaluate our approach on the EVIMO dataset and show that it performs competitively with supervised methods, both quantitatively and qualitatively.</p>
+<p>Event cameras are a novel type of biologically inspired vision sensor known for their high temporal resolution, high dynamic range, and low power consumption. Because of these properties, they are well-suited for processing fast motions that require rapid reactions. Although event cameras have recently shown competitive performance in unsupervised optical flow estimation and in visual odometry when combined with frame-based cameras, performance in detecting independently moving objects (IMOs) is lacking behind, although this is a task where event-based methods would be very useful based on their low latency and HDR properties. Previous approaches to event-based IMO segmentation have been heavily dependent on labeled data.  However, biological vision systems have developed the ability to avoid moving objects through daily tasks without being given explicit labels. In this work, we propose the first event framework that generates IMO pseudo-labels using geometric constraints. Due to its unsupervised nature, our method can handle an arbitrary number of not predetermined objects and is easily scalable to datasets where expensive IMO labels are not readily available. We evaluate our approach on the EVIMO dataset and show that it performs competitively with supervised methods, both quantitatively and qualitatively.<br>
+[<a href="https://arxiv.org/abs/2312.00114" rel="external nofollow noopener" target="_blank">paper</a>] | [<a href="https://www.cis.upenn.edu/~ziyunw/un_evmoseg/" rel="external nofollow noopener" target="_blank">page</a>]</p>
 
 <h3 id="pipeline">Pipeline</h3>
 
@@ -130,11 +131,11 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/UnEvMoSeg/Figure2-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/UnEvMoSeg/Figure2_wb-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/UnEvMoSeg/Figure2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="pipeline" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/UnEvMoSeg/Figure2_wb.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="pipeline" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -163,11 +164,11 @@ train the network.</p>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/UnEvMoSeg/qual_v1-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/UnEvMoSeg/qual_v1_wb-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/UnEvMoSeg/qual_v1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="result" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/UnEvMoSeg/qual_v1_wb.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="result" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -189,7 +190,7 @@ train the network.</p>
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Jinyuan  Guo. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+        © Copyright 2024 Jinyuan  Guo. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>

@@ -17,8 +17,9 @@
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
-  --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #ffffff;
+  --global-divider-color: rgba(0, 0, 0, 0.198);
+  --global-card-bg-color: rgba(255, 255, 255, 0.4);
+  --global-card-img-frame-color: rgba(255, 183, 100, 0.371);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -60,7 +61,8 @@ html[data-theme=dark] {
   --global-footer-link-color: #000000;
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
-  --global-card-bg-color: #212529;
+  --global-card-bg-color: rgba(59, 66, 74, 0.4431372549);
+  --global-card-img-frame-color: #0e9eca53;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -515,11 +517,16 @@ footer.sticky-bottom {
 .projects a:hover .card-title {
   color: var(--global-theme-color);
 }
+.projects .card {
+  background-color: var(--global-card-bg-color);
+}
 .projects .card img {
   width: 100%;
+  border-radius: 10px;
 }
 .projects .card-item {
   width: auto;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .projects .card-item .row {
@@ -534,8 +541,8 @@ footer.sticky-bottom {
 .projects h2.category {
   color: var(--global-divider-color);
   border-bottom: 1px solid var(--global-divider-color);
-  padding-top: 0.5rem;
-  margin-top: 2rem;
+  padding-top: 0rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: right;
 }
