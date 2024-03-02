@@ -3,7 +3,7 @@ layout: page
 title:  Events Replay Buffer 
 description: Replay Events Stream into Super Slow Motion
 img: assets/img/Event_rply/cover.gif
-importance: 4
+importance: 6
 category: academic 
 ---
 

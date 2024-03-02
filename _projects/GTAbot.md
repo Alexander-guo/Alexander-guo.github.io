@@ -3,7 +3,7 @@ layout: page
 title: Grand Theft Auto Robot
 description:  Self-Designed Differential Drive Robot 
 img: assets/img/GTA_robot/cover.jpg
-importance: 3
+importance: 5
 category: academic 
 ---
 

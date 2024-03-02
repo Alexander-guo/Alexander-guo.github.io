@@ -3,7 +3,7 @@ layout: page
 title: Semantic SLAM
 description: A Semantic SLAM Pipline Based on ORB-SLAM2 
 img: assets/img/Sem_SLAM/cover.png
-importance: 2
+importance: 4
 category: academic
 ---
 

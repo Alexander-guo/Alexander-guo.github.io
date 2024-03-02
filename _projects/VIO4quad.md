@@ -4,7 +4,7 @@ title: Autonomous VIO for Quadrotor
 description: Autonomous Visual Inertial Odometry for CrazyFlie 2.0  
 img: assets/img/VIO_quad/cover.gif
 # redirect: https://unsplash.com
-importance: 1
+importance: 3
 category: academic
 ---
 
