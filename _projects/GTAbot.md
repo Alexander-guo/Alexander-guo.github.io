@@ -99,17 +99,38 @@ The specific design of beacon sensing, VIVE detection and motor driving circuits
 
 ### Videos
 
-Autonomous Navigation:
+__Autonomous Navigation__:
 
-[![Auto_Navig](http://img.youtube.com/vi/HcDnAdSXqKk/0.jpg)](https://www.youtube.com/watch?v=HcDnAdSXqKk)
+<!-- [![Auto_Navig](http://img.youtube.com/vi/HcDnAdSXqKk/0.jpg)](https://www.youtube.com/watch?v=HcDnAdSXqKk) -->
 
-Wall Following:
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include video.html path="https://www.youtube.com/embed/HcDnAdSXqKk?si=-Hiypdr2dh2Spgal" class="img-fluid rounded z-depth-1" 
+        width=900 %}
+    </div>
+</div>
 
-[![Wall_Follow](http://img.youtube.com/vi/rx5FApxXP7M/0.jpg)](https://www.youtube.com/watch?v=rx5FApxXP7M)
+__Wall Following__:
 
-Beacon Tracking:
+<!-- [![Wall_Follow](http://img.youtube.com/vi/rx5FApxXP7M/0.jpg)](https://www.youtube.com/watch?v=rx5FApxXP7M) -->
 
-[![Beacon](http://img.youtube.com/vi/L0Ju4nM8VtI/0.jpg)](https://www.youtube.com/watch?v=L0Ju4nM8VtI)
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include video.html path="https://www.youtube.com/embed/rx5FApxXP7M?si=ogZ9--m--0_bwJwY" class="img-fluid rounded z-depth-1" 
+        width=900 %}
+    </div>
+</div>
+
+__Beacon Tracking__:
+
+<!-- [![Beacon](http://img.youtube.com/vi/L0Ju4nM8VtI/0.jpg)](https://www.youtube.com/watch?v=L0Ju4nM8VtI) -->
+
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% include video.html path="https://www.youtube.com/embed/L0Ju4nM8VtI?si=dwA_xqm16WCEG14I" class="img-fluid rounded z-depth-1" 
+        width=900 %}
+    </div>
+</div>
 
 <!-- You can also put regular text between your rows of images.
 Say you wanted to write a little bit about your project before you posted the rest of the images.
