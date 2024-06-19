@@ -20,7 +20,7 @@ To give your project a background in the portfolio page, just add the img tag to
     img: /assets/img/12.jpg
     --- -->
 
-This is a differential drive robot designed for collecting beacons and soda cans in the game rule and also with a variety of other functionalities. The MCU is ESP32 and programmed by [Arduino C++](https://www.arduino.cc/) on this robot. [[code]](https://github.com/Alexander-guo/MEAM510_GTA_final_project)
+This is a differential drive robot designed for beacons searching and small items collection with a variety of funtional features. The MCU for this robot is ESP32 and programmed in [Arduino C++](https://www.arduino.cc/). [[code]](https://github.com/Alexander-guo/MEAM510_GTA_final_project)
 
 <div class="container">
     <div class="row justify-content-center">

@@ -8,7 +8,7 @@ importance: 3
 category: academic
 ---
 
-This VIO (Visual Inertial Odometry) project involves trajectory planning and accurate tracking, state estimation through stereo vision to realized GPS-denied quadrotor autonomy. Once a quadcopter can accurately estimate its own state and use it for planning and control, the last step towards autonomy is to implement a mapping solution so the quadcopter can sense where the obstacles are using its on-board sensors. [[code]](https://github.com/Alexander-guo/Autonomous-VIO-based-Quadrotor)
+This VIO (Visual Inertial Odometry) project involves trajectory planning, accurate tracking and state estimation through stereo vision to realize GPS-denied quadrotor autonomy. Once a quadcopter can accurately estimate its own state and use it for planning and control, the last step towards autonomy is to implement a mapping solution so the quadcopter can sense where the obstacles are using its on-board sensors. [[code]](https://github.com/Alexander-guo/Autonomous-VIO-based-Quadrotor)
 
 <div class="row justify-content-center">
     <div class="col-sm-8">
